@@ -60,7 +60,7 @@ int main()
         }
     }
 
-    int ans;
+    int ans = 0;
     for (int ind = k; ind >= 0; ind--)
     {
         if(dp[n-1][ind]) {

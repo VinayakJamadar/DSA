@@ -2,7 +2,7 @@
 // Problem : Buy and Sell Stock
 
 
-// Method 4 : Using Space Optimization (Bottom-Up DP --> Base Cases to Recursive Cases)
+// Method 1 : Using Space Optimization (Bottom-Up DP --> Base Cases to Recursive Cases)
 
 // Time Complexity : O(n)
 // Reason : As we are using For Loops (n iterations)
