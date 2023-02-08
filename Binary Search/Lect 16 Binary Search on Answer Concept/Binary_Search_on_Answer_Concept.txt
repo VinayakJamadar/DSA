@@ -1,0 +1,12 @@
+Shortcut for Binary Search on Answer Concept is BSA
+
+Important Note :
+i. Used in Some Unsorted Array
+ii. BSA is not always used on Unsorted Array
+
+Where are Binary Search on Answer Concept used
+i. If we want to use Binary Search on Unsorted Array
+
+Criteria :
+i. mid is required answer or not
+ii. if mid is not required answer, whether to move left or right

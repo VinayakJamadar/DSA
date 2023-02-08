@@ -11,14 +11,14 @@ using namespace std;
 
 int main(){
     vector<int> arr{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int low = 0, high = arr.size() - 1, elem = 7, ind = -1;
+    int low = 0, high = arr.size() - 1, key = 7, ind = -1;
     while(low <= high) {
         int mid = low + (high - low)/2;
-        if(arr[mid] == elem) {
+        if(arr[mid] == key) {
             ind = mid;
             break;
         }
-        else if(arr[mid] < elem) {
+        else if(arr[mid] < key) {
             low = mid+1;
         }
         else {
