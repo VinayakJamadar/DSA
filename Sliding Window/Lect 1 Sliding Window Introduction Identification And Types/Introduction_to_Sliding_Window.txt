@@ -1,14 +1,14 @@
 To identify most of the problems based on the Sliding Window.
 The Following are some criteria
 
-1. Problem contains either a array or string
-3. Problem required either maximum or minimum value
-2. Problem is related to either subarray or substring
-4. In Problem either Window Size is given or We have to find the Window Size
+1. Problem input contains either a array or string.
+2. Problem is related to either subarray or substring.
+3. Problem input contains either Window Size or Value(i.e we have to find Window Size).
+4. Problem output requires either a maximum or minimum answer.
 
 Important Note on Identification of Problems based on Sliding Window: 
 
-1. Sometime Window size is not given or We have to identify or Find it.
+1. Sometimes Window size is not given or We have to find it.
 
 Types of Sliding Window
 
