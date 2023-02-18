@@ -17,18 +17,18 @@ Types of Sliding Window
 
 1. Fix Size Sliding Window
 - In this Window size is Fix.
-- Problems contain a Window Size and We have to Find the Maximum or Minimum Value.
-- In this we have to don't require any extra map, set or list.
+- Problems contain a Window Size and We have to Find the Maximum or Minimum Condition(or Value).
+- In this we require any extra map, set or list.
 - Problems are usually Easy.
 
 2. Variable Size Sliding Window
 - In this Window size if variable.
-- Problems contain a Value and We have to Find the possible values of Window Size (mostly Largest or Smallest Window Size).
-- In this we have to require extra map, set or list.
+- Problems contain a Condition (or Value) and We have to Find the possible size of Window (mostly Largest or Smallest Window Size).
+- In this we require extra map, set or list.
 - Problems are usually Hard.
 
 Important Note on Types of Sliding Window:
 
-1. In Fix Size Sliding Window problems --> window size is given and we have to find value (maximum or minimum)
-2. In Varible Size Sliding Window problems --> value is given and we have to Find the possible size of Window (Largest or Smallest).
+1. In Fix Size Sliding Window problems --> Window size is given and we have to find Maximize or Minimize Condition (or Value)
+2. In Varible Size Sliding Window problems --> Condition (or Value) is given and we have to Find the possible size of Window (Largest or Smallest).
 3. Hence Fix Size Sliding Window and Variable Size Sliding Window Problems are mostly reverse of each other.
