@@ -5,6 +5,8 @@ This is Data Structure and Algorithm - Notes and Codes Repo
 
 2. Dynamic Programming by Striver (Link : https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY)
 
+3. Heap (Link : https://www.youtube.com/playlist?list=PL_z_8CaSLPWdtY9W22VjnPxG30CXNZpI9)
+
 3. Recursion by Striver (Link : https://www.youtube.com/playlist?list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9)
 
-4. Sliding Windwo by Aditya Verma (Link : https://www.youtube.com/playlist?list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj)
+4. Sliding Window by Aditya Verma (Link : https://www.youtube.com/playlist?list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj)
