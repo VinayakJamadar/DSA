@@ -1,0 +1,25 @@
+To identify most of the problems based on the Heap.
+The Following are keywords are present in Problem
+
+1. k
+2. Smallest or Largest
+
+Types of Heap
+1. Max Heap 
+    i. Top of Heap is Maximum element.
+    ii. Problems are Identified as: k + Smallest
+    iii. Creation: priority_queue<dataType> maxHeap
+2. Min Heap 
+    i. Top of Heap is Minimum element.
+    ii. Problems are Identified as: k + Largest
+    iii. Creation: priority_queue<dataType, vector<dataType>, greater<dataType>> minHeap
+
+Important Notes
+1. priority_queue STL has almost same the Methods and Attributes as Stack STL.
+2. We can solve Problems of Heap by Sorting. 
+3. Time Complexity if we solve Heap Problems using 
+    i. Sorting Approach: O(n*log(n))
+    ii. Heap Approach: O(n*log(k))
+
+    Where k <= n. 
+    Hence thier is slightly decrease in Time Complexity if we Solve Heap Problems using Heap Approach.
