@@ -9,6 +9,8 @@ int main(){
     // Input
     vector<int> arr{7, 10, 4, 3, 20, 15};
     int n = arr.size(), k = 3;
+
+    // Solution
     sort(arr.begin(), arr.end());
     reverse(arr.begin(), arr.end());
 

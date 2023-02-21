@@ -2,7 +2,7 @@ To identify most of the problems based on the Heap.
 The Following are keywords are present in Problem
 
 1. k
-2. Smallest or Largest
+2. Related to Smallest Element or Largest Element or Sorting the Elements
 
 Types of Heap
 1. Max Heap 
