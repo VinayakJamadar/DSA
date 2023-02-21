@@ -1,8 +1,8 @@
 // Problem : Connect Ropes to Minimise the Cost
 
-// Time Complexity : O(n*n*log(n))
+// Time Complexity : O(n*log(n))
 
-// Reason : O(n) for 'while' loop and O(n*log(n)) for push() or pop() function of priority_queue
+// Reason : O(n*log(n)) for creating heap i.e O(n) for 'for' loop of size n and O(log(n)) for push() function
 
 #include<bits/stdc++.h>
 using namespace std;
