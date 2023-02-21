@@ -2,7 +2,7 @@
 
 // Time Complexity : O(n*n*log(n))
 
-// Reason : O(n) for 'while' loop and O(n*log(n)) for heap
+// Reason : O(n) for 'while' loop and O(n*log(n)) for push() or pop() function of priority_queue
 
 #include<bits/stdc++.h>
 using namespace std;
