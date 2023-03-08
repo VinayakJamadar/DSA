@@ -1,0 +1,24 @@
+Binary Tree: Tree having at max 2 childrens
+
+Types of Binary Tree:
+1. Full BT
+2. Complete BT
+3. Perfect BT
+4. Balanced BT
+5. Degenerate Tree
+
+1. Full BT: 
+either has 0 or 2 childrens.
+
+2. Complete BT: 
+i. all levels are completely filled except the last level.
+ii. the last level has all nodes in left as possible.
+
+3. Perfect BT: 
+all leaf nodes are at same level.
+
+4. Balanced BT:
+height of tree at max log(n), where n = no. of nodes in tree
+
+5. Degenerate(or Skew) Tree:
+every node as only either 0 or 1 children.
