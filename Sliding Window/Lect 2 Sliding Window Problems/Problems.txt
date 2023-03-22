@@ -8,7 +8,7 @@ A. Fixed Size Sliding Window
 
 B. Variable Size Sliding Window
 
-1. Largest/Smallest Subarray of Sum k (Lect 7)
+1. Largest/Smallest Subarray of Sum k (Lect 7 and 8)
 2. Largest Substring of k Unique Characters (Lect 10)
 3. Longest Substring With Without Repeating Characters (Lect 11)
 4. Pick Toys (Lect 12)
