@@ -15,6 +15,8 @@
 //       /  \
 //      4    5
 
+// Diameter of Tree1: 3
+
 //          Tree2
 //            1
 //          /  \
@@ -26,6 +28,7 @@
 //        /          \
 //       9            8
 
+// Diameter of Tree2: 6
 
 // Time Complexity: O(n)
 // Reason: As height() using only O(n) i.e Traversing all the nodes

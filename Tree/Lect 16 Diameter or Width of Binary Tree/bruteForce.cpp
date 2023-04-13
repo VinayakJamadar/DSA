@@ -15,6 +15,8 @@
 //       /  \
 //      4    5
 
+// Diameter of Tree1: 3
+
 //          Tree2
 //            1
 //          /  \
@@ -25,6 +27,8 @@
 //         5        7
 //        /          \
 //       9            8
+
+// Diameter of Tree2: 6
 
 // Time Complexity: O(n^2)
 // Reason: As check() traverse all the nodes takes O(n) and For every node height() takes O(n). So it is O(n*n) ~ O(n^2)

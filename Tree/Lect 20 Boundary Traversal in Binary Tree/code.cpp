@@ -1,4 +1,4 @@
-// Problem: Zig-Zag or Spiral Traversal in Binary Tree
+// Problem: Boundary Traversal Traversal in Binary Tree
 
 
 //        Tree
@@ -11,6 +11,8 @@
 //     4       9
 //    / \    /  \
 //   5  6   10  11
+
+// Boundary Traversal: [1, 2, 3, 4, 5, 6, 10, 11, 9, 8, 7]
 
 // Time Complexity: O(n)
 // Reason: As we traverse all the node of tree.
