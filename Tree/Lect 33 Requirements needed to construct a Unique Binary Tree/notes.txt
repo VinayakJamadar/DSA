@@ -1,0 +1,11 @@
+Requirements needed to construct a Unique Binary Tree
+
+--> InOrder Traversal + Either PreOrder or PostOrder Traversal
+
+Reason: 
+
+For Given PreOrder or PostOrder Traversal of Binary Tree, There will always Exist a Unique InOrder Traversal.
+
+or
+
+There will be a Unique InOrder Traversal for Given PreOrder or PostOrder Traversal of Binary Tree

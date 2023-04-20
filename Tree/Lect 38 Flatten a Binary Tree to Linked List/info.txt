@@ -1,0 +1,15 @@
+Flatten a Binary Tree to Linked List
+1. The sequence of nodes in the linked list should be the same as that of the preorder traversal of the binary tree.
+2. The linked list nodes are the same binary tree nodes. You are not allowed to create extra nodes.
+3. The right child of a node points to the next node of the linked list whereas the left child points to NULL.
+
+3 Approaches for Flatten a Binary Tree to Linked List
+
+1. Recursive Reverse Postorder Traversal
+Time Complexity: O(n), Space Complexity: O(n)
+2. Iterative Reverse Postorder Traversal
+Time Complexity: O(n), Space Complexity: O(n)
+3. Modified Morris Traversal
+Time Complexity: O(n), Space Complexity: O(1)
+
+Reverse Postorder is : Right Left Root
