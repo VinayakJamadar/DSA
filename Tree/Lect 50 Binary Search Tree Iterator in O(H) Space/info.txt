@@ -1,0 +1,10 @@
+3 Types BSTIterator
+
+1. beforeBSTIterator
+- Iterator used for Reverse Inorder Traversal
+
+2. nextBSTIterator
+- Iterator used for Inorder Traversal
+
+3. BSTIterator (Note: Combination of beforeBSTIterator + nextBSTIterator)
+- Iterator used for either Inorder Traversal or Reverse Inorder Traversal but not Both at a Time.

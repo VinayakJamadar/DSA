@@ -15,7 +15,7 @@
 //       \
 //        6
 
-// Inorder: [6, 5, 4, 3, 2, 8, 7, 1]
+// Postorder: [6, 5, 4, 3, 2, 8, 7, 1]
 
 // Time Complexity: O(2*n)
 // Reason: O(n) for going into the depth i.e using Outer 'while' loop and O(n) while backtracking from stack 'st' i.e using Inner 'while' loop.

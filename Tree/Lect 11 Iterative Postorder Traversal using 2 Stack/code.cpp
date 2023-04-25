@@ -13,7 +13,7 @@
 //              \
 //               8
 
-// Inorder: [4, 5, 2, 8, 7, 6, 3, 1]
+// Preorder: [4, 5, 2, 8, 7, 6, 3, 1]
 
 // Time Complexity: O(n)
 // Reason: As we traverse all the node of tree.

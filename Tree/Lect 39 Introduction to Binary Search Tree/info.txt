@@ -1,0 +1,10 @@
+Condition for Binary Search Tree (BST)
+
+1. Left Node Value < Current Node Value < Right Node Value (i.e L < C < R)
+2. Left Subtree should be BST
+3. Right Subtree should be BST
+
+Difference Between Binary Search Tree (BST) and Binary Tree (BT)
+
+BST -> Average Time Complexity of CRUD Operation is O(log(n))
+BT -> Average Time Complexity of CRUD Operation is O(n)

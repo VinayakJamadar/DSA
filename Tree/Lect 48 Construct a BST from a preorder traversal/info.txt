@@ -1,0 +1,13 @@
+3 Approaches to Construct a BST from a preorder traversal
+
+1. bruteForce1: Constructing a BST by Inserting all the Nodes
+Time Complexity: O(n^2), Space Complexity: O(1)
+Note: Refer Lect 43
+
+2. bruteForce2: Constructing a BST by Preorder and Inorder Traversal
+Time Complexity: O(n*log(n)), Space Complexity: O(n)
+Note: Inorder of BST is sorted array. So Inorder is equal to Sorted array of given Preorder. (Refer Lect 34)
+
+3. optimization: Constructing a BST by Using Property of BST and UpperBound(or maxVal)
+Time Complexity: O(3n), Space Complexity: O(1)
+Note: Using Property of BST i.e For every node, Left Subtree must contain values less and Right Subtree must contain values greater than Current Node value.
