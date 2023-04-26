@@ -7,14 +7,14 @@
 // Reason : As we are using two nested For Loops (n and k+1 iterations)
 
 
-// Auxilliary Space Complexity : O(1)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree)
+// Auxiliary Space Complexity : O(1)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree)
 
-// Non-Auxilliary Space Complexity : O(k+1)
+// Non-Auxiliary Space Complexity : O(k+1)
 // Reason : Using vector data structure of k+1 size
 
 // Total Space Complexity : O(k+1)
-// Reason : Sum of Auxilliary Space Complexity O(1) and Non-Auxilliary Space Complexity O(k+1) (i.e O(1) = O(1)+O(k+1))
+// Reason : Sum of Auxiliary Space Complexity O(1) and Non-Auxiliary Space Complexity O(k+1) (i.e O(1) = O(1)+O(k+1))
 
 
 // Output :

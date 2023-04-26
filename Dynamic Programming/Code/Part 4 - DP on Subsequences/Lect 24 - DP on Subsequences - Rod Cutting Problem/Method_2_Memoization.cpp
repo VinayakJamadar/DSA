@@ -9,14 +9,14 @@
 // As we avoided the overlapping subproblem. So mostly we have to calculate only n*(n+1) values (i.e calculating and storing the values in dp[ind][len]) after that once we get a overlapping subproblem we will return the value from already calculate value (i.e dp[ind][len])
 
 
-// Auxilliary Space Complexity : O(max(n, minElementOf(arr)))
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree)
+// Auxiliary Space Complexity : O(max(n, minElementOf(arr)))
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree)
 
-// Non-Auxilliary Space Complexity : O(n*(n+1))
+// Non-Auxiliary Space Complexity : O(n*(n+1))
 // Reason : Using of vector of vector data structure
 
 // Total Space Complexity : O(max(n, minElementOf(arr))) + O(n*(n+1))
-// Reason : Sum of Auxilliary Space Complexity O(max(n, minElementOf(arr))) and Non-Auxilliary Space Complexity O(n*(n+1))
+// Reason : Sum of Auxiliary Space Complexity O(max(n, minElementOf(arr))) and Non-Auxiliary Space Complexity O(n*(n+1))
 
 
 // Output :

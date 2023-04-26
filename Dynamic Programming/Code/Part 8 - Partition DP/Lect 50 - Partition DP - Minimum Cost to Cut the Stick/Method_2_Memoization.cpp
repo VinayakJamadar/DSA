@@ -9,14 +9,14 @@
 // So overall time complexity is O((c+2)*(c+2)*c)
 
 
-// Auxilliary Space Complexity : O(c)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree)
+// Auxiliary Space Complexity : O(c)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree)
 
-// Non-Auxilliary Space Complexity : O((c+2)*(c+2))
+// Non-Auxiliary Space Complexity : O((c+2)*(c+2))
 // Reason : Using of vector of vector data structure
 
 // Total Space Complexity : O(c) + O((c+2)*(c+2))
-// Reason : Sum of Auxilliary Space Complexity O(c) and Non-Auxilliary Space Complexity O((c+2)*(c+2))
+// Reason : Sum of Auxiliary Space Complexity O(c) and Non-Auxiliary Space Complexity O((c+2)*(c+2))
 
 #include <bits/stdc++.h>
 using namespace std;

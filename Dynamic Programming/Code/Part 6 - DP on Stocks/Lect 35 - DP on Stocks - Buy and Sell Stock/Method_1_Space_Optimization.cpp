@@ -8,14 +8,14 @@
 // Reason : As we are using For Loops (n iterations)
 
 
-// Auxilliary Space Complexity : O(1)
-// Reason : No Auxilliary space
+// Auxiliary Space Complexity : O(1)
+// Reason : No Auxiliary space
 
-// Non-Auxilliary Space Complexity : O(1)
+// Non-Auxiliary Space Complexity : O(1)
 // Reason : No use of any data structure (like array, vector, matrix, etc)
 
 // Total Space Complexity : O(1)
-// Reason : Sum of Auxilliary Space Complexity O(1) and Non-Auxilliary Space Complexity O(1) (i.e O(1) = O(1)+O(1))
+// Reason : Sum of Auxiliary Space Complexity O(1) and Non-Auxiliary Space Complexity O(1) (i.e O(1) = O(1)+O(1))
 
 // Answer :
 // Maximum Profit : 5

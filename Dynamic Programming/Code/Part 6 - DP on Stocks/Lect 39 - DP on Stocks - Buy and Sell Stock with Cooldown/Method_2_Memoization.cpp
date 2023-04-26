@@ -9,14 +9,14 @@
 // As we avoided the overlapping subproblem. So mostly we have to calculate only n*2 values (i.e calculating and storing the values in dp[ind][buy]) after that once we get a overlapping subproblem we will return the value from already calculate value (i.e dp[ind][buy])
 
 
-// Auxilliary Space Complexity : O(n)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree)
+// Auxiliary Space Complexity : O(n)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree)
 
-// Non-Auxilliary Space Complexity : O(n*2)
+// Non-Auxiliary Space Complexity : O(n*2)
 // Reason : Using of vector of vector data structure of n*2 size
 
 // Total Space Complexity : O(n) + O(n*2)
-// Reason : Sum of Auxilliary Space Complexity O(n) and Non-Auxilliary Space Complexity O(n*2)
+// Reason : Sum of Auxiliary Space Complexity O(n) and Non-Auxiliary Space Complexity O(n*2)
 
 // Answer :
 // Maximum Profit : 11

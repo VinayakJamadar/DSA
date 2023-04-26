@@ -8,14 +8,14 @@
 // As we avoided the overlapping subproblem. So mostly we have to calculate only n*max(n, maxW/minElementOf(wt)) values (i.e calculating and storing the values in dp[ind][w]) after that once we get a overlapping subproblem we will return the value from already calculate value (i.e dp[ind][w])
 
 
-// Auxilliary Space Complexity : O(max(n, maxW/minElementOf(wt)))
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree)
+// Auxiliary Space Complexity : O(max(n, maxW/minElementOf(wt)))
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree)
 
-// Non-Auxilliary Space Complexity : O(n*(maxW+1))
+// Non-Auxiliary Space Complexity : O(n*(maxW+1))
 // Reason : Using of vector of vector data structure
 
 // Total Space Complexity : O(max(n, maxW/minElementOf(wt))) + O(n*(maxW+1))
-// Reason : Sum of Auxilliary Space Complexity O(max(n, maxW/minElementOf(wt))) and Non-Auxilliary Space Complexity O(n*(maxW+1))
+// Reason : Sum of Auxiliary Space Complexity O(max(n, maxW/minElementOf(wt))) and Non-Auxiliary Space Complexity O(n*(maxW+1))
 
 #include <bits/stdc++.h>
 using namespace std;

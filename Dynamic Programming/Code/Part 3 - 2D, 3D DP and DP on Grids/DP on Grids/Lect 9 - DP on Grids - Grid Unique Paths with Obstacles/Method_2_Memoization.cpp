@@ -8,14 +8,14 @@
 // As we avoided the overlapping subproblem. So mostly we have to calculate only n * m values (i.e calculating and storing the values in dp[i][j]) after that once we get a overlapping subproblem we will return the value from already calculate value (i.e dp[i][j])
 
 
-// Auxilliary Space Complexity : O(n + m)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree == path length from (0, 0) to (n, m))
+// Auxiliary Space Complexity : O(n + m)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree == path length from (0, 0) to (n, m))
 
-// Non-Auxilliary Space Complexity : O(n * m)
+// Non-Auxiliary Space Complexity : O(n * m)
 // Reason : using of vector data structure
 
 // Total Space Complexity : O(n + m) + O(n * m)
-// Reason : Sum of Auxilliary Space Complexity O(n + m) and Non-Auxilliary Space Complexity O(n * m)
+// Reason : Sum of Auxiliary Space Complexity O(n + m) and Non-Auxiliary Space Complexity O(n * m)
 
 #include <bits/stdc++.h>
 using namespace std;

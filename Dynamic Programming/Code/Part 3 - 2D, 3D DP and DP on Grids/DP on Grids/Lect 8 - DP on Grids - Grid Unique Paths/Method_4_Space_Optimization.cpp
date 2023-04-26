@@ -7,14 +7,14 @@
 // Reason : As we are using two nested For Loops. Outer For Loop with m iterations and Inner For Loop with n iterations.
 
 
-// Auxilliary Space Complexity : O(1)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree)
+// Auxiliary Space Complexity : O(1)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree)
 
-// Non-Auxilliary Space Complexity : O(n)
+// Non-Auxiliary Space Complexity : O(n)
 // Reason : Using of vector data structure of n size
 
 // Total Space Complexity : O(n)
-// Reason : Sum of Auxilliary Space Complexity O(1) and Non-Auxilliary Space Complexity O(n) (i.e O(1) = O(1)+O(n))
+// Reason : Sum of Auxiliary Space Complexity O(1) and Non-Auxiliary Space Complexity O(n) (i.e O(1) = O(1)+O(n))
 
 #include <bits/stdc++.h>
 using namespace std;

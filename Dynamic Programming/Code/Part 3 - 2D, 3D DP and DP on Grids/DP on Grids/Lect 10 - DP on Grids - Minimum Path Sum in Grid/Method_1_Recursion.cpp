@@ -7,14 +7,14 @@
 // Reason : As we are calling 2 recursive calls { i.e up = f(i-1, j) and left = f(i, j-1) } for max(n , m) times
 
 
-// Auxilliary Space Complexity : O(n + m)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree == path length from (0, 0) to (n, m))
+// Auxiliary Space Complexity : O(n + m)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree == path length from (0, 0) to (n, m))
 
-// Non-Auxilliary Space Complexity : O(1)
+// Non-Auxiliary Space Complexity : O(1)
 // Reason : No use of any data structure (like array, vector, matrix, etc)
 
 // Total Space Complexity : O(n + m)
-// Reason : Sum of Auxilliary Space Complexity O(n + m) and Non-Auxilliary Space Complexity O(1) (i.e O(n + m) = O(n + m) + O(1))
+// Reason : Sum of Auxiliary Space Complexity O(n + m) and Non-Auxiliary Space Complexity O(1) (i.e O(n + m) = O(n + m) + O(1))
 
 #include <bits/stdc++.h>
 using namespace std;

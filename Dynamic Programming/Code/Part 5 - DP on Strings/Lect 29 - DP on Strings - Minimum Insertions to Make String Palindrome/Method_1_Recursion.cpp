@@ -8,14 +8,14 @@
 // Reason : As we are calling 2 recursive calls for 2*n times
 
 
-// Auxilliary Space Complexity : O(2n)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree == no. of rows)
+// Auxiliary Space Complexity : O(2n)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree == no. of rows)
 
-// Non-Auxilliary Space Complexity : O(1)
+// Non-Auxiliary Space Complexity : O(1)
 // Reason : No use of any data structure (like array, vector, matrix, etc)
 
 // Total Space Complexity : O(2n)
-// Reason : Sum of Auxilliary Space Complexity O(2*n) and Non-Auxilliary Space Complexity O(1) (i.e O(2n) = O(2n) + O(1))
+// Reason : Sum of Auxiliary Space Complexity O(2*n) and Non-Auxiliary Space Complexity O(1) (i.e O(2n) = O(2n) + O(1))
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -7,14 +7,14 @@
 // Reason : As we are using three nested For Loops (c+2, c+2 and c iterations)
 
 
-// Auxilliary Space Complexity : O(1)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree)
+// Auxiliary Space Complexity : O(1)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree)
 
-// Non-Auxilliary Space Complexity : O((c+2)*(c+2))
+// Non-Auxiliary Space Complexity : O((c+2)*(c+2))
 // Reason : Using of vector of vector data structure of n*n size
 
 // Total Space Complexity : O((c+2)*(c+2))
-// Reason : Sum of Auxilliary Space Complexity O(1) and Non-Auxilliary Space Complexity O((c+2)*(c+2)) (i.e O((c+2)*(c+2)) = O(1)+O((c+2)*(c+2)))
+// Reason : Sum of Auxiliary Space Complexity O(1) and Non-Auxiliary Space Complexity O((c+2)*(c+2)) (i.e O((c+2)*(c+2)) = O(1)+O((c+2)*(c+2)))
 
 #include <bits/stdc++.h>
 using namespace std;

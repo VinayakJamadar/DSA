@@ -9,14 +9,14 @@
 // As we avoided the overlapping subproblem. So mostly we have to calculate only n*(maxW+1) values (i.e calculating and storing the values in dp[ind][target]) after that once we get a overlapping subproblem we will return the value from already calculate value (i.e dp[ind][target])
 
 
-// Auxilliary Space Complexity : O(max(n, k)) , where k = reqTarget/minElementOf(coins)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree)
+// Auxiliary Space Complexity : O(max(n, k)) , where k = reqTarget/minElementOf(coins)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree)
 
-// Non-Auxilliary Space Complexity : O(n*(maxTarget+1))
+// Non-Auxiliary Space Complexity : O(n*(maxTarget+1))
 // Reason : Using of vector of vector data structure
 
 // Total Space Complexity : O(max(n, k)) + O(n*(maxTarget+1)) , where k = reqTarget/minElementOf(coins)
-// Reason : Sum of Auxilliary Space Complexity O(n) and Non-Auxilliary Space Complexity O(n*(maxTarget+1))
+// Reason : Sum of Auxiliary Space Complexity O(n) and Non-Auxiliary Space Complexity O(n*(maxTarget+1))
 
 #include <bits/stdc++.h>
 using namespace std;

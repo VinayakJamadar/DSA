@@ -7,14 +7,14 @@
 // Reason : As we are calling 2 recursive calls for max(n, maxW/minElementOf(wt)) times
 
 
-// Auxilliary Space Complexity : O(max(n, maxW/minElementOf(wt)))
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree == no. of ros)
+// Auxiliary Space Complexity : O(max(n, maxW/minElementOf(wt)))
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree == no. of ros)
 
-// Non-Auxilliary Space Complexity : O(1)
+// Non-Auxiliary Space Complexity : O(1)
 // Reason : No use of any data structure (like array, vector, matrix, etc)
 
 // Total Space Complexity : O(max(n, maxW/minElementOf(wt)))
-// Reason : Sum of Auxilliary Space Complexity O(max(n, maxW/minElementOf(wt))) and Non-Auxilliary Space Complexity O(1) (i.e O(max(n, maxW/minElementOf(wt))) = O(max(n, maxW/minElementOf(wt))) + O(1))
+// Reason : Sum of Auxiliary Space Complexity O(max(n, maxW/minElementOf(wt))) and Non-Auxiliary Space Complexity O(1) (i.e O(max(n, maxW/minElementOf(wt))) = O(max(n, maxW/minElementOf(wt))) + O(1))
 
 #include<bits/stdc++.h>
 using namespace std;

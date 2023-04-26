@@ -7,14 +7,14 @@
 // Reason : As we are calling c recursive calls for c times
 
 
-// Auxilliary Space Complexity : O(c)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree == no. of rows)
+// Auxiliary Space Complexity : O(c)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree == no. of rows)
 
-// Non-Auxilliary Space Complexity : O(1)
+// Non-Auxiliary Space Complexity : O(1)
 // Reason : No use of any data structure (like array, vector, matrix, etc)
 
 // Total Space Complexity : O(c)
-// Reason : Sum of Auxilliary Space Complexity O(c) and Non-Auxilliary Space Complexity O(1) (i.e O(c) = O(c) + O(1))
+// Reason : Sum of Auxiliary Space Complexity O(c) and Non-Auxiliary Space Complexity O(1) (i.e O(c) = O(c) + O(1))
 
 #include <bits/stdc++.h>
 using namespace std;

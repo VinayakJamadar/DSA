@@ -7,14 +7,14 @@
 // Reason : As we are using two nested For Loops.
 
 
-// Auxilliary Space Complexity : O(1)
-// Reason : No Auxilliary Space
+// Auxiliary Space Complexity : O(1)
+// Reason : No Auxiliary Space
 
-// Non-Auxilliary Space Complexity : O(n)
+// Non-Auxiliary Space Complexity : O(n)
 // Reason : Using vector data structure of n size
 
 // Total Space Complexity : O(n)
-// Reason : Sum of Auxilliary Space Complexity O(1) and Non-Auxilliary Space Complexity O(n) (i.e O(1) = O(1)+O(n))
+// Reason : Sum of Auxiliary Space Complexity O(1) and Non-Auxiliary Space Complexity O(n) (i.e O(1) = O(1)+O(n))
 
 #include <bits/stdc++.h>
 using namespace std;

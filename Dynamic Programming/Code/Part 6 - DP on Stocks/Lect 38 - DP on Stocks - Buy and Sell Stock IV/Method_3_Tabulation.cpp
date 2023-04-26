@@ -8,14 +8,14 @@
 // Reason : As we are using two nested For Loops (n and 4 iterations)
 
 
-// Auxilliary Space Complexity : O(1)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree)
+// Auxiliary Space Complexity : O(1)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree)
 
-// Non-Auxilliary Space Complexity : O(n*2*k)
+// Non-Auxiliary Space Complexity : O(n*2*k)
 // Reason : Using of vector of vector data structure of n*2*k size
 
 // Total Space Complexity : O(n*2*k)
-// Reason : Sum of Auxilliary Space Complexity O(1) and Non-Auxilliary Space Complexity O(n*2*k) (i.e O(n*2*k) = O(1)+O(n*2*k))
+// Reason : Sum of Auxiliary Space Complexity O(1) and Non-Auxiliary Space Complexity O(n*2*k) (i.e O(n*2*k) = O(1)+O(n*2*k))
 
 // Answer :
 // Maximum Profit : 6

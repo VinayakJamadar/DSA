@@ -9,14 +9,14 @@
 // And As we are using a For loop of 3 iterations final Complexity is O(n * 4 * 3)
 
 
-// Auxilliary Space Complexity : O(n)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree)
+// Auxiliary Space Complexity : O(n)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree)
 
-// Non-Auxilliary Space Complexity : O(n * 4)
+// Non-Auxiliary Space Complexity : O(n * 4)
 // Reason : using of vector data structure
 
 // Total Space Complexity : O(n) + O(n * 4)
-// Reason : Sum of Auxilliary Space Complexity O(n) and Non-Auxilliary Space Complexity O(n * 4)
+// Reason : Sum of Auxiliary Space Complexity O(n) and Non-Auxiliary Space Complexity O(n * 4)
 
 #include<bits/stdc++.h>
 using namespace std;

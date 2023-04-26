@@ -8,14 +8,14 @@
 // As we avoided the overlapping subproblem. So mostly we have to calculate only values (i.e calculating and storing the values in dp[i]) after that once we get a overlapping subproblem we will return the value from already calculate value (i.e dp[i])
 
 
-// Auxilliary Space Complexity : O(n)
-// Reason : Auxilliary space take be recursion tree (i.e height of recursion tree)
+// Auxiliary Space Complexity : O(n)
+// Reason : Auxiliary space take be recursion tree (i.e height of recursion tree)
 
-// Non-Auxilliary Space Complexity : O(n)
+// Non-Auxiliary Space Complexity : O(n)
 // Reason : Using of vector data structure
 
 // Total Space Complexity : O(n) + O(n)
-// Reason : Sum of Auxilliary Space Complexity O(n) and Non-Auxilliary Space Complexity O(n)
+// Reason : Sum of Auxiliary Space Complexity O(n) and Non-Auxiliary Space Complexity O(n)
 
 #include <bits/stdc++.h>
 using namespace std;
