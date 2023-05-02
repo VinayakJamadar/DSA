@@ -23,8 +23,7 @@ using namespace std;
 int f(int ind, int w, vector<int>& wt, vector<int>& val, vector<vector<int>>& dp) {
     // Base Case
     if(ind == 0){
-        if(w%wt[ind] == 0) return (w/wt[ind])*val[ind];
-        else return INT_MIN;
+        return (w/wt[ind])*val[ind];
     }
 
     // Recursive Case

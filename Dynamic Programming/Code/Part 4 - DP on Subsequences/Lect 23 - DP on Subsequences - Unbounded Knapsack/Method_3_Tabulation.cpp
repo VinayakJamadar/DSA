@@ -32,8 +32,7 @@ int main()
         {
             // Base Case
             if(ind == 0){
-                if(w%wt[ind] == 0) dp[ind][w] = (w/wt[ind])*val[ind];
-                else dp[ind][w] = INT_MIN;
+                dp[ind][w] = (w/wt[ind])*val[ind];
             }
             // Recursive Case
             else {

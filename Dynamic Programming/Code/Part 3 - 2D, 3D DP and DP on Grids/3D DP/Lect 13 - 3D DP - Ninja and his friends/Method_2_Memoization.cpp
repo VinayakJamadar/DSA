@@ -41,7 +41,7 @@ int f(int i, int j1, int j2, int n, int m, vector<vector<int>>& matrix, vector<v
             maxi = max(maxi, value);
         }
     }
-    return maxi;
+    return dp[i][j1][j2] = maxi;
 }
 
 int main()

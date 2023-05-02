@@ -37,11 +37,11 @@ int main()
             }
             // Recursive Case
             else {
+                int notPick = dp[ind-1][target];
                 int pick = 0;
                 if(target >= coins[ind]) {
                     pick = dp[ind][target-coins[ind]];
                 }
-                int notPick = dp[ind-1][target];
                 dp[ind][target] = notPick + pick;
             }
         }

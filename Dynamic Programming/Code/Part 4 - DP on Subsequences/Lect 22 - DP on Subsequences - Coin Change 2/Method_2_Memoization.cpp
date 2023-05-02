@@ -30,11 +30,11 @@ int f(int ind, int target, vector<int>& coins, vector<vector<int>>& dp) {
 
     // Recursive Case
     if(dp[ind][target] != -1) return dp[ind][target];
+    int notPick = f(ind-1, target, coins, dp);
     int pick = 0;
     if(target >= coins[ind]) {
         pick = f(ind, target-coins[ind], coins, dp);
     }
-    int notPick = f(ind-1, target, coins, dp);
     return dp[ind][target] = notPick + pick;
 }
 

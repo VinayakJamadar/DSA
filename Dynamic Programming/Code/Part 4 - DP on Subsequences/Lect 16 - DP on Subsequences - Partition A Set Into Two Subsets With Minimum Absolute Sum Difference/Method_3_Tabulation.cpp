@@ -35,7 +35,6 @@ int main()
     vector<int> arr{3, 2, 7};
     int n = arr.size(), totalSum = accumulate(arr.begin(), arr.end(), 0);
     
-    // int k = totalSum;
     int k = totalSum/2;
     vector<vector<bool>> dp(n, vector<bool> (k+1, 0));
     for (int ind = 0; ind < n; ind++)
