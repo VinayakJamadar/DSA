@@ -16,7 +16,7 @@
 
 // 1. Data Structures required for Problem
 //      1.1. Declare DS1 -> Which stores the Final Answer 
-//      1.2. Declare DS2 -> Which stores the possible candidate for from current Window for Final Answer
+//      1.2. Declare DS2 -> Which stores the possible candidate from current Window for Final Answer
 // 2. Iterate till Last possible limit of Sliding Window
 // 3. If Required do Some Calculations on jth element and store on DS2
 // 4. If DS2 equal to k
@@ -41,7 +41,7 @@ int main(){
     // 1. Data Structrues required for Problem
     // 1.1. Declare DS1 -> Which stores the Final Answer
     int ans = 0;
-    // 1.2. Declare DS2 -> Which stores the possible candidate for from current Window for Final Answer
+    // 1.2. Declare DS2 -> Which stores the possible candidate from current Window for Final Answer
     map<char, int> alphabetCnt;
     // 2. Iterate till Last possible limit of Sliding Window
     while(j < n) {
