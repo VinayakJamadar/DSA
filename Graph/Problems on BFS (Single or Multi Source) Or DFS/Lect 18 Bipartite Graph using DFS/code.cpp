@@ -1,4 +1,4 @@
-// Problem: Bipartite Graph using BFS
+// Problem: Bipartite Graph using DFS
 
 // Definition of Bipartite Graph
 // If we are able to colour a graph with two colours such that no adjacent nodes have the same colour, it is called a Bipartite graph.
@@ -13,7 +13,7 @@
 // E = Number of Edges
 
 // Time Complexity: O(V + 2E)
-// Reason: Time complexity of bfs traversal of undirected graph
+// Reason: Time complexity of dfs traversal of undirected graph
 
 // Space Complexity: O(V)
 // Reason: Space taken 'color' vector.
@@ -23,26 +23,17 @@ using namespace std;
 
 class Solution {
 private:
-    bool bfs(int node, vector<int>& color, vector<int> adj[]) {
-        queue<int> q;
-        q.push(node);
-        color[node] = 0;
-
-        while(!q.empty()) {
-            node = q.front();
-            q.pop();
-            for(auto i: adj[node]) {
-                // If the adjacent node is yet not colored
-                // then give the opposite color of the node
-                if(color[i] == -1) {
-                    color[i] = !color[node];
-                    q.push(i);
-                }
-                // else if the adjacent guy having the same color
-                // someone did color it from different path
-                // i.e we got a odd cycle
-                else if(color[i] == color[node]) return false;
+    bool dfs(int node, int col, vector<int>& color, vector<int> adj[]) {
+        color[node] = col;
+        // traverse adjacent nodes
+        for (auto it : adj[node])
+        {
+            // if uncoloured
+            if (color[it] == -1) {
+                if (dfs(it, !col, color, adj) == false) return false;
             }
+            // if previously coloured and have the same colour
+            else if (color[it] == col) return false;
         }
         return true;
     }
@@ -54,7 +45,7 @@ public:
         // for connected components
         for (int i = 0; i < V; i++) {
             if (color[i] == -1) {
-                if (bfs(i, color, adj) == false) return false;
+                if (dfs(i, 0, color, adj) == false) return false;
             }
         }
         return true;
