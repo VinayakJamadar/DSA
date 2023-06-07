@@ -1,0 +1,4 @@
+Very Important Lecture on Dijkstra's Algorithm
+
+1. Video Link: https://youtu.be/3dINsjyfooY
+2. Article Link: https://takeuforward.org/data-structure/g-34-dijkstras-algorithm-intuition-and-time-complexity-derivation/

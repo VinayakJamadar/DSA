@@ -1,3 +1,22 @@
+// Problem: Dijkstra's Algorithm - Using Priority Queue
+
+
+// V = Number of Nodes
+// E = Number of Edges
+
+
+// Time Complexity: O(E * log(V))
+// Reason: O(E * log(V)) for dijsktra's algorithm. Refer Lecture 34 for detailed Explanation of Time and Space Complexity.
+
+
+// Space Complexity: O(E + V)
+// Reason: O(E + V) at max approximate complexity for using priority queue (i.e minHeap)
+
+
+// Notes:
+// Refer Lecture 34 for detailed Explanation of Time and Space Complexity.
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,9 +28,9 @@ class Solution {
             // Initialising 'distTo' list with a large number to
             // indicate the nodes are unvisited initially.
             // This list contains distance from source to the nodes.
-            vector<int> distTo(V, INT_MAX);
+            vector<int> distTo(V, 1e9);
 
-            // Create a priority queue for storing the nodes as a pair {dist,node}
+            // Create a priority queue (i.e minHeap) for storing the nodes as a pair {dist,node}
             // where 'dist' is the distance from source to the node node.
             priority_queue<pair<int, int>, vector<pair<int,int>>, greater<pair<int, int>>> pq;
 
@@ -47,8 +66,7 @@ class Solution {
         }
 };
 
-int main()
-{
+int main() {
     // Driver code.
     int V = 3, E = 3, S = 2;
     vector<vector<int>> adj[V];
@@ -65,8 +83,9 @@ int main()
     Solution obj;
     vector<int> res = obj.dijkstra(V, adj, S);
 
-    for (int i = 0; i < V; i++)
-    {
+    // Output:
+    // 4 3 0
+    for (int i = 0; i < V; i++) {
         cout << res[i] << " ";
     }
     cout << endl;
