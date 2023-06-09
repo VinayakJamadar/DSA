@@ -6,11 +6,11 @@
 // E = m = Number of Edges
 
 
-// Using Dijsktra's Alogrithm
+// Using Dijsktra's algorithm
 
 
 // Time Complexity: O(V * (E * log(V))) or O(n * (m * log(n)))
-// Reason: As dijsktra's alogrithm use O(E * log(V)) complexity. But we are using Dijsktra's Alogrithm for all 'V' or 'n' nodes. So, overall time complexity if O(V * (E * log(V))).
+// Reason: As dijsktra's algorithm use O(E * log(V)) complexity. But we are using Dijsktra's algorithm for all 'V' or 'n' nodes. So, overall time complexity if O(V * (E * log(V))).
 
 
 // Space Complexity: O(2E) + O(V) or O(2m) + O(n)
