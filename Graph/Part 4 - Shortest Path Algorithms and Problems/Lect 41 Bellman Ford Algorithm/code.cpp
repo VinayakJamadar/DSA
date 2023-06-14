@@ -24,6 +24,7 @@
 // 2. Bellman-Ford’s algorithm successfully solves these problems. It works fine with negative edges as well as it is able to detect if the graph contains a negative cycle.
 // 3. But this algorithm is only applicable for directed graphs.
 // 4. In order to apply this algorithm to an undirected graph, we just need to convert the undirected edges into directed edges.
+// 5. Edges can be in any order.
 
 #include <bits/stdc++.h>
 using namespace std;
