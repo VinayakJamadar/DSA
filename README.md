@@ -26,7 +26,7 @@ This is Data Structure and Algorithm - Notes and Codes Repo
     Notes Link : https://takeuforward.org/data-structure/strivers-tree-series-tree-data-structure/
 
 8. Trie by Striver <br/>
-    Videos Link : https://www.youtube.com/playlist?list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj
+    Videos Link : https://youtube.com/playlist?list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp
 
 ## License
 
