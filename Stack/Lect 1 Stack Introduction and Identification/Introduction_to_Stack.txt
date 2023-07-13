@@ -1,0 +1,29 @@
+Keywords to identify Problems based on the Stack.
+
+1. Problem is related to Array
+2. Problem Brute Force Approach  having 2 Nested 'for' Loop with Complexity O(n^2) and Inner 'for' Loop depends on Outer 'for' Loop (Consider 'i', 'j' iterators for Outer and Inner 'for' Loop. Then 'j' traversal range depends 'i')
+
+Example:
+Brute Force Approach Code has general syntax are follows
+
+for(i = (0 .. n-1) or (n-1 .. 0)) {
+    for(j = (0 .. i) or (i .. n-1) or (n-1 .. i) or (i .. 0)) {
+
+    }
+}
+
+
+Stack Problem
+1. Nearest Greater to Left
+2. Nearest Greater to Right
+3. Nearest Smaller to Left
+4. Nearest Smaller to Right
+5. Stock Span Problem
+6. Maximum Area of Histogram
+7. Max Area of Rectangle in Binary Matrix
+8. Rain Water Trapping
+9. Implementing a Min Stack (with and without Extra Space)
+10. Implement Stack using Heap
+11. The celebrity Problem
+12. Longest Valid Parenthesis
+13. Iterative Tower of Hanoi

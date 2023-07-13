@@ -1,7 +1,14 @@
 Keywords to identify Problems based on the Binary Search.
 
-1. Problem input Contains either Array or String.
-2. Problem output requires a Index or Value at that Index
+1. Problem is related to Sorted Array.
+2. Find a Required Value
+
+
+Keywords to identify Problems based on the Binary Search on Answer.
+
+1. Problem is mostly related to the Unsorted Array.
+2. Find a Required Minimum (Floor) or Maximum (Ceil) Value that Satisfies Condition
+
 
 Binary Search Problem Types:
 
