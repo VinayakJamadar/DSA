@@ -1,5 +1,4 @@
-To identify most of the problems based on the Sliding Window.
-The Following are some criteria
+Keywords to identify Problems based on the Sliding Window.
 
 1. Problem input contains either a array or string.
 2. Problem is related to either subarray or substring.

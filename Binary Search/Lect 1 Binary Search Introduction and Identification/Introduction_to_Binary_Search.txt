@@ -1,0 +1,11 @@
+Keywords to identify Problems based on the Binary Search.
+
+1. Problem input Contains either Array or String.
+2. Problem output requires a Index or Value at that Index
+
+Binary Search Problem Types:
+
+  Sr |   Array or String  |           Type           |
+  1. |       Sorted       |      Binary Search       |
+  2. |  Partially Sorted  |  Modified Binary Search  |
+  3. |      UnSorted      |  Binary Search on Answer |
