@@ -3,13 +3,37 @@ Keywords to identify Problems based on the Stack.
 1. Problem is related to Array
 2. Problem Brute Force Approach  having 2 Nested 'for' Loop with Complexity O(n^2) and Inner 'for' Loop depends on Outer 'for' Loop (Consider 'i', 'j' iterators for Outer and Inner 'for' Loop. Then 'j' traversal range depends 'i')
 
-Example:
-Brute Force Approach Code has general syntax are follows
+
+Convertion of Brute Force Approach to Stack Approach:
+
+1. Brute Force Approach Code has general syntax as follows
 
 for(i = (0 .. n-1) or (n-1 .. 0)) {
     for(j = (0 .. i) or (i .. n-1) or (n-1 .. i) or (i .. 0)) {
 
     }
+}
+
+2. Stack Approach Code has general syntax as follows
+for(i = (0 .. n-1) or (n-1 .. 0)) {
+
+}
+
+
+Note:
+1. Direction of traversal [for(i)] in Stack Approach is Reverse of Direction of traversal of Inner 'for' loop [for(j)] in Brute Force Approach
+
+2. Example
+Brute Force Approach
+for(i = 0 .. n-1) {
+    for (j = i+1 .. n) {
+
+    }
+}
+
+Stack Approach
+for(i = n-1 .. 0) {
+
 }
 
 

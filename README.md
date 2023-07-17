@@ -21,11 +21,14 @@ This is Data Structure and Algorithm - Notes and Codes Repo
 6. Sliding Window by Aditya Verma <br/>
     Videos Link : https://www.youtube.com/playlist?list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj
 
-7. Tree by Striver <br/>
+7. Stack by Aditya Verma <br/>
+    Videos Link : https://www.youtube.com/playlist?list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd
+
+8. Tree by Striver <br/>
     Videos Link : https://www.youtube.com/watch?v=OYqYEM1bMK8&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk <br/>
     Notes Link : https://takeuforward.org/data-structure/strivers-tree-series-tree-data-structure/
 
-8. Trie by Striver <br/>
+9. Trie by Striver <br/>
     Videos Link : https://youtube.com/playlist?list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp
 
 ## License
