@@ -13,7 +13,7 @@
 // 1. Find NSL Index array (nslIndex)
 // 2. Find NSR Index array (nsrIndex)
 // 3. Then width[i] = nsrIndex[i] - nslIndex[i] - 1
-// 4. Then area[i] = height[i] * width[i]
+// 4. Then area[i] = histogram[i] * width[i]
 // 5. Then mah = maximum element of 'area' array
 
 // Note:
@@ -69,12 +69,12 @@ void printArray(vector<int>& arr, string name) {
 }
 
 int main(){
-    vector<int> height{6, 2, 5, 4, 5, 1, 6};
+    vector<int> histogram{6, 2, 5, 4, 5, 1, 6};
 
-    int n = height.size();
+    int n = histogram.size();
     
-    vector<int> nsrIndex = calculateNSRIndex(height);
-    vector<int> nslIndex = calculateNSLIndex(height);
+    vector<int> nsrIndex = calculateNSRIndex(histogram);
+    vector<int> nslIndex = calculateNSLIndex(histogram);
     vector<int> width(n);
     vector<int> area(n);
 
@@ -83,12 +83,12 @@ int main(){
     }
     
     for (int i = 0; i < n; i++) {
-        area[i] = height[i] * width[i];
+        area[i] = histogram[i] * width[i];
     }
 
     int mah = area[max_element(area.begin(), area.end()) - area.begin()];
 
-    printArray(height, "height");
+    printArray(histogram, "histogram");
     printArray(nsrIndex, "nsrIndex");
     printArray(nslIndex, "nslIndex");
     printArray(width, "width");

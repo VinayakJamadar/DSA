@@ -6,14 +6,18 @@
 // Time Complexity: O(n)
 // Reason: At worst case 'for' loop iterate 'n' times.
 
-// Space Complexity: O(n)
-// Reason: Using Data Structure Stack 'st'. Which at worst case (i.e If 'arr' array is Sorted) store all 'n' elements of 'arr' array.
+// Space Complexity: O(3n)
+// Reason: 
+// O(n) for Using Data Structure Stack 'st'. Which at worst case (i.e If 'arr' array is Sorted) store all 'n' elements of 'arr' array.
+// O(n) for Index of Nearest Smaller Element to Left i.e 'nslIndex' array
+// O(n) for Index of Nearest Smaller Element to Right i.e 'nsrIndex' array
+
 
 // Algorithm:
 // 1. Find NSL Index array (nslIndex)
 // 2. Find NSR Index array (nsrIndex)
 // 3. Then width[i] = nsrIndex[i] - nslIndex[i] - 1
-// 4. Then area[i] = height[i] * width[i]
+// 4. Then area[i] = histogram[i] * width[i]
 // 5. Then mah = maximum element of 'area' array
 
 // Note:
@@ -129,12 +133,12 @@ void printArray(vector<int>& arr, string name) {
 }
 
 int main(){
-    vector<int> height{6, 2, 5, 4, 5, 1, 6};
+    vector<int> histogram{6, 2, 5, 4, 5, 1, 6};
 
-    int n = height.size();
+    int n = histogram.size();
     
-    vector<int> nsrIndex = calculateNSRIndex(height);
-    vector<int> nslIndex = calculateNSLIndex(height);
+    vector<int> nsrIndex = calculateNSRIndex(histogram);
+    vector<int> nslIndex = calculateNSLIndex(histogram);
     vector<int> width(n);
     vector<int> area(n);
 
@@ -143,12 +147,12 @@ int main(){
     }
     
     for (int i = 0; i < n; i++) {
-        area[i] = height[i] * width[i];
+        area[i] = histogram[i] * width[i];
     }
 
     int mah = area[max_element(area.begin(), area.end()) - area.begin()];
 
-    printArray(height, "height");
+    printArray(histogram, "histogram");
     printArray(nsrIndex, "nsrIndex");
     printArray(nslIndex, "nslIndex");
     printArray(width, "width");
