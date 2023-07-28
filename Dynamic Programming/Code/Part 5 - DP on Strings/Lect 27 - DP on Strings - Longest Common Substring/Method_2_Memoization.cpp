@@ -18,33 +18,33 @@
 // Total Space Complexity : O(n+m) + O(n*m)
 // Reason : Sum of Auxiliary Space Complexity O(n+m) and Non-Auxiliary Space Complexity O(n*m)
 
-// #include <bits/stdc++.h>
-// using namespace std;
+#include <bits/stdc++.h>
+using namespace std;
 
-// int len = 0;
+int len = 0;
 
-// int f(int i, int j, string s, string t, vector<vector<int>>& dp) {
-//     // Base Case
-//     if(i < 0 or j < 0) return 0;
+int f(int i, int j, string s, string t, vector<vector<int>>& dp) {
+    // Base Case
+    if(i < 0 or j < 0) return 0;
 
-//     // Recursive Case
-//     if(dp[i][j] != -1) return dp[i][j];
-//     if(s[i] == t[j]) {
-//         dp[i][j] = 1 + f(i-1, j-1, s, t, dp);
-//         len = max(len, dp[i][j]);
-//         return dp[i][j];
-//     }
-//     return dp[i][j] = 0;
-// }
+    // Recursive Case
+    if(dp[i][j] != -1) return dp[i][j];
+    if(s[i] == t[j]) {
+        dp[i][j] = 1 + f(i-1, j-1, s, t, dp);
+        len = max(len, dp[i][j]);
+        return dp[i][j];
+    }
+    return dp[i][j] = 0;
+}
 
-// int main()
-// {
-//     string s = "abcdef", t = "abzdef";
-//     int n = s.size(), m = t.size();
-//     vector<vector<int>> dp(n, vector<int> (m, -1));
+int main()
+{
+    string s = "abcdef", t = "abzdef";
+    int n = s.size(), m = t.size();
+    vector<vector<int>> dp(n, vector<int> (m, -1));
     
-//     f(n-1, m-1, s, t, dp);
+    f(n-1, m-1, s, t, dp);
     
-//     cout<<"Length of lcs is : "<<len;
-//     return 0;
-// }
+    cout<<"Length of lcs is : "<<len;
+    return 0;
+}

@@ -40,32 +40,32 @@ int main()
     vector<int> dp(n, 1);
     vector<int> hash(n, 0);
 
-    int maxLen = 1, lasti = 0;
-    for (int i = 0; i < n; i++)
+    int maxLen = 1, lastInd = 0;
+    for (int ind = 0; ind < n; ind++)
     {
-        hash[i] = i;
-        for (int j = 0; j < i; j++)
+        hash[ind] = ind;
+        for (int j = 0; j < ind; j++)
         {
-            if(arr[i] % arr[j] == 0) {
-                if(1+dp[j] > dp[i]) {
-                    dp[i] = 1+dp[j];
-                    hash[i] = j;
+            if(arr[ind] % arr[j] == 0) {
+                if(1+dp[j] > dp[ind]) {
+                    dp[ind] = 1+dp[j];
+                    hash[ind] = j;
                 }
             }
         }
 
-        if(dp[i] > maxLen) {
-            maxLen = dp[i];
-            lasti = i;
+        if(dp[ind] > maxLen) {
+            maxLen = dp[ind];
+            lastInd = ind;
         }
     }
 
     vector<int> lis(maxLen);
-    lis[maxLen-1] = arr[lasti];
+    lis[maxLen-1] = arr[lastInd];
     for (int i = 1; i < maxLen; i++)
     {
-        lasti = hash[lasti];
-        lis[maxLen-1-i] = arr[lasti];
+        lastInd = hash[lastInd];
+        lis[maxLen-1-i] = arr[lastInd];
     }
 
     cout<<"Longest Divisible Subset : [ ";

@@ -17,30 +17,30 @@
 // Total Space Complexity : O(n+m)
 // Reason : Sum of Auxiliary Space Complexity O(n+m) and Non-Auxiliary Space Complexity O(1) (i.e O(n+m) = O(n+m) + O(1))
 
-// #include <bits/stdc++.h>
-// using namespace std;
+#include <bits/stdc++.h>
+using namespace std;
 
-// int len = 0;
+int len = 0;
 
-// int f(int i, int j, string s, string t, int& len) {
-//     // Base Case
-//     if(i < 0 or j < 0) return 0;
+int f(int i, int j, string s, string t, int& len) {
+    // Base Case
+    if(i < 0 or j < 0) return 0;
 
-//     // Recursive Case
-//     if(s[i] == t[j]) {
-//         int val = 1 + f(i-1, j-1, s, t, len);
-//         len = max(len,s val);
-//         return 1 + f(i-1, j-1, s, t, len);
-//     }
-//     return 0;
-// }
+    // Recursive Case
+    if(s[i] == t[j]) {
+        int val = 1 + f(i-1, j-1, s, t, len);
+        len = max(len, val);
+        return 1 + f(i-1, j-1, s, t, len);
+    }
+    return 0;
+}
 
-// int main()
-// {
-//     string s = "abcdef", t = "abzdef";
-//     int n = s.size(), m = t.size(), len = 0;
+int main()
+{
+    string s = "abcdef", t = "abzdef";
+    int n = s.size(), m = t.size(), len = 0;
     
-//     f(n-1, m-1, s, t, len);
-//     cout<<"Length of lcs is : "<<len;
-//     return 0;
-// }
+    f(n-1, m-1, s, t, len);
+    cout<<"Length of lcs is : "<<len;
+    return 0;
+}
