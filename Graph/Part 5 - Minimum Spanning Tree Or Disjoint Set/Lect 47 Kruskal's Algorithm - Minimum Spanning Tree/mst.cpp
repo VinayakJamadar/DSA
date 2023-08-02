@@ -11,7 +11,7 @@
 
 // Time Complexity: O(V + E) + O(E * log(E)) + O(E* 4a * 2)
 // Reason:
-// 1. O(N+E) for extracting edge information from the adjacency list
+// 1. O(V + E) for extracting edge information from the adjacency list
 // 2. O(E * log(E)) for sorting the array consists of the edge tuples. 
 // 3. Finally, we are using the disjoint set operations inside a loop. The loop will continue to E times. Inside that loop, there are two disjoint set operations like findUPar() and UnionBySize() each taking '4a' and so it will result in '4a * 2'. That is why the last term O(E * 4a * 2) is added.
 
