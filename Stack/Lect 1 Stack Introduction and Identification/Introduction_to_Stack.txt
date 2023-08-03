@@ -1,7 +1,7 @@
 Keywords to identify Problems based on the Stack.
 
 1. Problem is related to Array
-2. Problem Brute Force Approach  having 2 Nested 'for' Loop with Complexity O(n^2) and Inner 'for' Loop depends on Outer 'for' Loop (Consider 'i', 'j' iterators for Outer and Inner 'for' Loop. Then 'j' traversal range depends 'i')
+2. Problem Brute Force Approach having 2 Nested 'for' Loop with Complexity O(n^2) and Inner 'for' Loop depends on Outer 'for' Loop (Consider 'i', 'j' iterators for Outer and Inner 'for' Loop. Then 'j' traversal range depends 'i')
 
 
 Convertion of Brute Force Approach to Stack Approach:
