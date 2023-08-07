@@ -37,14 +37,43 @@ int f(int i, int j, string s, string t, vector<vector<int>>& dp) {
     return dp[i][j] = 0;
 }
 
+int f(int i, int j, string s, string t, int& len, vector<vector<int>>& dp) {
+    // Base Case
+    if(i < 0 or j < 0) return 0;
+
+    if(dp[i][j] != -1) return dp[i][j];
+    // Recursive Case
+    int val;
+    if(s[i] == t[j]) {
+        val = 1 + f(i-1, j-1, s, t, len, dp);
+        len = max(len, val);
+        return dp[i][j] = val;
+    }
+    else {
+        val = max(f(i-1, j, s, t, len, dp), f(i, j-1, s, t, len, dp));
+        len = max(len, val);
+        return dp[i][j] = 0;
+    }
+}
+
 int main()
 {
-    string s = "abcdef", t = "abzdef";
-    int n = s.size(), m = t.size();
+    string s = "abcdef", t = "abzdefy";
+    int n = s.size(), m = t.size(), len = 0;
     vector<vector<int>> dp(n, vector<int> (m, -1));
     
-    f(n-1, m-1, s, t, dp);
+    f(n-1, m-1, s, t, len, dp);
+
+    // Uncomment to print dp
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < m; j++)
+    //     {
+    //         cout << dp[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
     
-    cout<<"Length of lcs is : "<<len;
+    cout<<"Length of longest common substring is : "<<len;
     return 0;
 }

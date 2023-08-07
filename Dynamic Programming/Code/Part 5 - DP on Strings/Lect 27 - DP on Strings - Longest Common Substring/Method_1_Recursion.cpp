@@ -20,27 +20,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int len = 0;
-
 int f(int i, int j, string s, string t, int& len) {
     // Base Case
     if(i < 0 or j < 0) return 0;
 
     // Recursive Case
+    int val;
     if(s[i] == t[j]) {
-        int val = 1 + f(i-1, j-1, s, t, len);
+        val = 1 + f(i-1, j-1, s, t, len);
         len = max(len, val);
-        return 1 + f(i-1, j-1, s, t, len);
+        return val;
     }
-    return 0;
+    else {
+        val = max(f(i-1, j, s, t, len), f(i, j-1, s, t, len));
+        len = max(len, val);
+        return 0;
+    }
 }
 
 int main()
 {
-    string s = "abcdef", t = "abzdef";
+    string s = "abcdef", t = "abzdefy";
     int n = s.size(), m = t.size(), len = 0;
     
     f(n-1, m-1, s, t, len);
-    cout<<"Length of lcs is : "<<len;
+    cout<<"Length of longest common substring is : "<<len;
     return 0;
 }
