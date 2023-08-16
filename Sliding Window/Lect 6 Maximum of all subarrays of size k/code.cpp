@@ -1,7 +1,7 @@
 // Problem : Maximum of all subarrays of size k
 
 // Time Complexity : O(n)
-// Space Complexity : O(n+k) --> O(n) for vector 'ans' and O(k) for list 'l'
+// Space Complexity : O(n+k) --> O(n) for vector 'ans' and O(k) for deque 'dq'
 
 // Important Note :
 
@@ -35,21 +35,21 @@ int main(){
     // 1.1. Declare DS1 -> Which stores the Final Answer
     vector<int> ans;
     // 1.2. Declare DS2 -> Which stores the possible candidate from current Window for Final Answer
-    list<int> l;
+    deque<int> dq;
     // 2. Iterate till Last possible limit of Sliding Window
     while(j < n) {
         // 3. If Required do Some Calculations on jth element and store on DS2
-        while(l.size() and l.back() < arr[j]) {
-            l.pop_back();
+        while(dq.size() and dq.back() < arr[j]) {
+            dq.pop_back();
         }
-        l.push_back(arr[j]);
+        dq.push_back(arr[j]);
 
         // 4. If Window size equal to k
         if(j-i+1 == k) {
             // 4.1. Find the answer from DS1 and DS2 and store on DS1
-            ans.push_back(l.front());
+            ans.push_back(dq.front());
             // 4.2. If Requried Remove Calculations done on ith element from DS2
-            if(arr[i] == l.front()) l.pop_front();
+            if(arr[i] == dq.front()) dq.pop_front();
             // 4.3. Increment i (i.e Slide the Window)
             i++;
         }
