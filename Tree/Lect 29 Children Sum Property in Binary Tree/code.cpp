@@ -72,6 +72,7 @@ class Node {
 // Similar to Postorder Traversal
 void reorder(Node* root) {
     if (root == NULL) return;
+    
     int child = 0;
     if (root -> left) {
         child += root -> left -> data;
@@ -91,7 +92,7 @@ void reorder(Node* root) {
     int total = 0;
     if (root -> left) total += root -> left -> data;
     if (root -> right) total += root -> right -> data;
-    if (root -> left || root -> right) root -> data = total;
+    root -> data = total;
 }
 
 void postOrder(Node* root, vector<int> &arr) {
@@ -131,8 +132,8 @@ int main(){
     cout<<"]"<<endl;
     
     
-    Node* root2 = new Node(50);
-    root2->left = new Node(7);
+    Node* root2 = new Node(40);
+    root2->left = new Node(10);
     root2->right = new Node(2);
     root2->left->left = new Node(3);
     root2->left->right = new Node(5);

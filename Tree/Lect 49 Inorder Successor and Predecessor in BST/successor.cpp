@@ -46,12 +46,12 @@ Node* inorderSuccessor(Node* root, int val) {
     Node* successor = NULL;
 
     while(root != NULL) {
-        if(val >= root->data) {
-            root = root->right;
-        }
-        else {
+        if(root->data > val) {
             successor = root;
             root = root->left;
+        }
+        else {
+            root = root->right;
         }
     }
 

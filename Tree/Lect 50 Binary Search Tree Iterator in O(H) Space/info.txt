@@ -6,5 +6,5 @@
 2. nextBSTIterator
 - Iterator used for Inorder Traversal
 
-3. BSTIterator (Note: Combination of beforeBSTIterator + nextBSTIterator)
+3. BSTIterator (Note: Either beforeBSTIterator Or nextBSTIterator But not Both)
 - Iterator used for either Inorder Traversal or Reverse Inorder Traversal but not Both at a Time.

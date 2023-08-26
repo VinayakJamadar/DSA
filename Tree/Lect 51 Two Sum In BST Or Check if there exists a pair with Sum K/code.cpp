@@ -28,7 +28,7 @@
 
 // Space Complexity: O(2*h)
 // Where h = height of BST
-// Reason: Stack stores atleast 'h' nodes and using for 2 BSTIterators
+// Reason: Stack stores atleast 'h' nodes for 2 BSTIterators
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -72,12 +72,12 @@ class BSTIterator {
             pushAll(root);
         }
 
-        // return whether we have a next or before smallest number
+        // return whether we have a next largest number of inorder or before smallest number of reverse inorder
         bool hasNext() {
             return !myStack.empty();
         }
 
-        // return the next or before smallest number
+        // return the next largest number of inorder or before smallest number of reverse inorder
         int next() {
             Node* node = myStack.top();
             myStack.pop();

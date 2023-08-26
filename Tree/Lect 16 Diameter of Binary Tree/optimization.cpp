@@ -5,8 +5,8 @@
 
 // Definition of Diameter of Binary Tree
 // 1. Longest path between 2 nodes
-// 2. Path does not need to pass via root
-// 3. In a Path Every node appears only once
+// 2. In a Path Every node appears only once
+// 3. Path may or may not pass from the root
 
 //          Tree1
 //            1

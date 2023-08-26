@@ -53,7 +53,7 @@ void leftView(Node *root, int level, vector<int>& ans) {
 }
 
 
-// Logic: Last node of every level using Recursive Reverse PreOrder Traversal
+// Logic: First node of every level using Recursive Reverse PreOrder Traversal
 
 void rightView(Node *root, int level, vector<int>& ans) {
     if(root == NULL) return ;

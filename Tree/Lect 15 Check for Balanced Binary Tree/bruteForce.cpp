@@ -67,7 +67,7 @@ bool check(Node* root) {
     bool leftCheck = check(root->left);
     bool rightCheck = check(root->right);
 
-    return leftCheck & rightCheck;
+    return leftCheck && rightCheck;
 }
 
 int main(){

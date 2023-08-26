@@ -68,7 +68,7 @@ class Node {
 
 // Then Answer is Max(lastNodeIndex - firstNodeIndex + 1) at Every Level
 
-// Problem Approach 1:
+// Disadvantage in Approach 1:
 // Consider a Skew Tree and Number of Nodes = 10^5
 // Then while Index we will get Out of Bound Error as last node Index = 2^(10^5)
 

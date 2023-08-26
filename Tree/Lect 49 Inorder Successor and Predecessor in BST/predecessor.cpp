@@ -46,12 +46,12 @@ Node* inorderPredecessor(Node* root, int val) {
     Node* predecessor = NULL;
 
     while(root != NULL) {
-        if(val > root->data) {
-            predecessor = root;
-            root = root->right;
+        if(root->data >= val) {
+            root = root->left;
         }
         else {
-            root = root->left;
+            predecessor = root;
+            root = root->right;
         }
     }
 

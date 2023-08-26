@@ -43,7 +43,6 @@ class Node {
 };
 
 // Return the Right Most Node of a Tree
-
 Node* findLastRight(Node* root) {
     while(root->right != NULL) {
         root = root->right;
@@ -52,7 +51,6 @@ Node* findLastRight(Node* root) {
 }
 
 // Attach Nodes Right Child to the Right Node of Left Subtree's Right Most Node
-
 Node* helper(Node* root) {
     if(root->left == NULL) return root->right;
     if(root->right == NULL) return root->left;
@@ -64,7 +62,6 @@ Node* helper(Node* root) {
     return root->left;
 }
 
-
 Node* deleteNode(Node* root, int key) {
     if(root == NULL) return NULL;
 
@@ -72,10 +69,10 @@ Node* deleteNode(Node* root, int key) {
         return helper(root);
     }
 
-    Node* cur = root;
-    while(cur != NULL) {
-        if(cur->data > key) {
-            if(cur->left != NULL && root->left->data == key) {
+    Node* dummy = root;
+    while(root != NULL) {
+        if(root->data > key) {
+            if(root->left != NULL && root->left->data == key) {
                 root->left = helper(root->left);
                 break;
             }
@@ -84,7 +81,7 @@ Node* deleteNode(Node* root, int key) {
             }
         }
         else {
-            if(cur->right != NULL && root->right->data == key) {
+            if(root->right != NULL && root->right->data == key) {
                 root->right = helper(root->right);
                 break;
             }
@@ -94,7 +91,7 @@ Node* deleteNode(Node* root, int key) {
         }
     }
     
-    return root;
+    return dummy;
 }
 
 void inOrder(Node* root, vector<int> &arr) {
@@ -129,11 +126,11 @@ int main(){
     }
     cout<<"]"<<endl;
 
-    deleteNode(root, key);
+    root = deleteNode(root, key);
 
     vector<int> after;
     inOrder(root, after);
-    cout << "Inorder Before Delete Node " << key << " : [ ";
+    cout << "Inorder After Delete Node " << key << " : [ ";
     for (int i = 0; i < after.size(); i++)
     {
         cout<<after[i]<<" ";

@@ -56,12 +56,12 @@ class beforeBSTIterator {
         beforeBSTIterator(Node* root) {
             pullAllRightNodes(root);
         }
-        // return whether we have a before smallest number
+        // return whether we have a before smallest number of reverse inorder
         bool hasBefore() {
             return !myStack.empty();
         }
 
-        // return the before smallest number
+        // return the before smallest number of reverse inorder
         int before() {
             Node* node = myStack.top();
             myStack.pop();

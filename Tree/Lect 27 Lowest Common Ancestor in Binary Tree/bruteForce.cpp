@@ -27,8 +27,10 @@
 // Time Complexity: O(n)
 // Reason: As we traverse all the node of tree.
 
-// Space Complexity: O(h)
-// Where h = height of tree
+// Space Complexity: O(h) + O(2k)
+// Reason: 
+// O(h) for Auxiliary Stack space taken by Recursion, Where h = height of tree
+// O(2k) for storing root to node Path of both Nodes
 
 #include<bits/stdc++.h>
 using namespace std;

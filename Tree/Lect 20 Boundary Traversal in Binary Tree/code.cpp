@@ -1,6 +1,12 @@
 // Problem: Boundary Traversal Traversal in Binary Tree
 
 
+// Definition of Boundary Traversal Traversal in Binary Tree
+
+// 1. Anti Clockwise Boundary Traversal = root + left boundary (from top to down order) + leaf nodes (from left to right order) + right boundary (from down to top order)
+
+// 2. Clockwise Boundary Traversal = root + right boundary (top to down order) + leaf nodes (from right to left order) + left boundary (from down to top order)
+
 //        Tree
 //          1
 //       /    \
@@ -12,7 +18,7 @@
 //    / \    /  \
 //   5  6   10  11
 
-// Boundary Traversal: [1, 2, 3, 4, 5, 6, 10, 11, 9, 8, 7]
+// Anti Clockwise Boundary Traversal: [1, 2, 3, 4, 5, 6, 10, 11, 9, 8, 7]
 
 // Time Complexity: O(n)
 // Reason: As we traverse all the node of tree.
@@ -106,7 +112,7 @@ int main(){
 
     vector<int> ans = boundaryTraversal(root);
 
-    cout<<"BoundaryTraversal : [ ";
+    cout<<"AntiClockwiseBoundaryTraversal : [ ";
     for (int i = 0; i < ans.size(); i++)
     {
         cout<<ans[i]<<" ";

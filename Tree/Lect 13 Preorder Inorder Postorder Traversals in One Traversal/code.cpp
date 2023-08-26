@@ -52,36 +52,36 @@ void allInOneTraversal(Node* root) {
     st.push({root, 1});
     
     while(!st.empty()) {
-        auto it = st.top();
+        auto node = st.top();
         st.pop();
 
         // this is part of preOrder
         // increment 1 to 2
-        // If exit push the left side of the tree
-        if(it.second == 1) {
-            preOrder.push_back(it.first->data);
-            it.second++;
-            st.push(it);
-            if(it.first->left != NULL) {
-                st.push({it.first->left, 1});
+        // If exist push the left side of the node
+        if(node.second == 1) {
+            preOrder.push_back(node.first->data);
+            node.second++;
+            st.push(node);
+            if(node.first->left != NULL) {
+                st.push({node.first->left, 1});
             }
         }
         // this is part of inOrder
         // increment 2 to 3
-        // If exit push the right side of the tree
-        else if(it.second == 2) {
-            inOrder.push_back(it.first->data);
-            it.second++;
-            st.push(it);
-            if(it.first->right != NULL) {
-                st.push({it.first->right, 1});
+        // If exist push the right side of the node
+        else if(node.second == 2) {
+            inOrder.push_back(node.first->data);
+            node.second++;
+            st.push(node);
+            if(node.first->right != NULL) {
+                st.push({node.first->right, 1});
             }
         }
         // this is part of postOrder
         // don't increment
         // don't push anything
         else {
-            postOrder.push_back(it.first->data);
+            postOrder.push_back(node.first->data);
         }
     }
 }

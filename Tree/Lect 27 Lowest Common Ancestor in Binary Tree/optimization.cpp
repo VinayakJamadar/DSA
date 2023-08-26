@@ -52,7 +52,6 @@ class Node {
 };
 
 // Modified Version of PreOrder Traversal 
-
 Node* lca(Node* root, int x, int y) {
     if(root == NULL) return NULL;
 
@@ -63,7 +62,6 @@ Node* lca(Node* root, int x, int y) {
     if(left == NULL) return right;
     else if(right == NULL) return left;
     else if(left != NULL && right != NULL) return root;
-    else return NULL;
 }
 
 int main(){

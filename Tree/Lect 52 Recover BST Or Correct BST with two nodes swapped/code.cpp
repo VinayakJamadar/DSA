@@ -111,7 +111,7 @@ void findViolation(Node* root) {
 
 void recoverTree(Node* root) {
     first = middle = last = NULL;
-    previous = new Node(INT_MIN);
+    // previous = new Node(INT_MIN);
     findViolation(root);
     if(first && last) swap(first->data, last->data);
     else if(first && middle) swap(first->data, middle->data);

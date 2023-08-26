@@ -55,12 +55,12 @@ class nextBSTIterator {
             pushAllLeftNodes(root);
         }
 
-        // return whether we have a next smallest number
+        // return whether we have a next largest number of inorder
         bool hasNext() {
             return !myStack.empty();
         }
 
-        // return the next smallest number
+        // return the next smallest number of inorder
         int next() {
             Node* node = myStack.top();
             myStack.pop();
